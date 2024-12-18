@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ztracený klíče</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-XXXXX+y+XXXXX/XXXX==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo_banner"><img src="images/paska_bila.png"></div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Domů</a></li>
+                <li><a href="#about">O nás</a></li>
+                <li><a href="#events">Akce</a></li>
+                <!--<li><a href="#merch">Merch</a></li>-->
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            <div> <div id ="bambulka" style="display: none; position: absolute;top: 50%;right: 0;transform: translateY(-50%); width: 8px;  height: 8px; background-color: #f4f4f4;border-radius: 50%;"></div></div>
+            <div></div>
+            <div> <div id ="bambulka2" style="display: none; position: absolute;top: 50%;right: 0;transform: translateY(-50%); width: 8px;  height: 8px; background-color: #f4f4f4;border-radius: 50%;"></div> </div>
+        </div>
+    </header>
+    <div id="menu">
+        <a href="#hero" onclick="toggleMenu()">Domů</a>
+        <a href="#about" onclick="toggleMenu()">O nás</a>
+        <a href="#events" onclick="toggleMenu()">Akce</a>
+        <a href="#contact" onclick="toggleMenu()">Kontakt</a>
+    </div>
+
+   
+
+    
+    <section class="hero" id="hero">
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h2>Vítejte na stránkách kapely Ztracený klíče</h2>
+            <p>Prozkoumejte naši hudbu, objednejte merch a zarezervujte si naše vystoupení!</p>
+            <!--<a href="#music" class="btn btn-one"></a>-->
+
+            <a href="#contact" class="box-1" style="text-decoration: none;">
+                <div class="btn btn-one" href="#contact">
+                  <span >REZERVOVAT VYSTOUPENÍ</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="box-1">
+            <div class="section-title">
+              <span>O NÁS </span>
+            </div>
+        </div>
+        <p>Jsme mladá kapela od Humpolce, co hraje převážně Rock a Pop-rock. <br> 
+            Mezi naše oblíbené umělce patří Kabáti, Harlej nebo Divokej Bill</p>
+        <div class="band-members">
+            <div class="member">
+                <img src="images/romca.jpg" alt="Člen kapely 1">
+                <div class="member-info romca">
+                    <h3>Romana Marešová</h3>
+                    <p>Zpěv</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, magni. 
+                       Eligendi odit enim minus placeat quo assumenda suscipit culpa..</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <img src="images/adam.jpg" alt="Člen kapely 4">
+                <div class="member-info adam">
+                    <h3>Adam Sidorenko</h3>
+                    <p>Bicí</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, magni. 
+                        Eligendi odit enim minus placeat quo assumenda suscipit culpa..</p>
+                </div>
+            </div> 
+
+            <div class="member">
+                <img src="images/kuba.jpg" alt="Člen kapely 2">
+                <div class="member-info kuba">
+                    <h3>Jakub Vobůrka</h3>
+                    <p>Kytara</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, magni. 
+                        Eligendi odit enim minus placeat quo assumenda suscipit culpa..</p>
+                </div>
+            </div>
+            
+            <div class="member">
+                <img src="images/piano.jpg" alt="Člen kapely 5">
+                <div class="member-info verca">
+                    <h3>Veronika Marešová</h3>
+                    <p>Klávesy</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, magni. 
+                        Eligendi odit enim minus placeat quo assumenda suscipit culpa..</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/lea.jpg" alt="Člen kapely 3">
+                <div class="member-info lea">
+                    <h3>Leona Šteflová</h3>
+                    <p>Bass kytara</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, magni. 
+                        Eligendi odit enim minus placeat quo assumenda suscipit culpa..</p>
+                </div>
+            </div>
+          
+           
+        </div>
+    </section>
+    <!---<section id="between">
+        <div class="img_holder">
+            <img src="images/image5.jpeg">
+        </div>
+    </section>-->
+
+    <section id="events">
+        <div class="events-container">
+            <div class="box-1">
+                <div class="section-title">
+                  <span>NAŠE AKCE </span>
+                </div> 
+               
+            </div> 
+            <p style=" font-size: 1.2rem;
+            color: #b5b5b5; margin-bottom: 40px;"   >Přijďte si nás poslechnout na náš nejbližší koncert.</p>
+           
+            <div class="main-event">
+                <div class="events_obr">
+                    <img src="images/plakat.png">
+                </div>
+
+                <div class="info_events">
+                    <h3>Vánoční zábava Komorovice</h3>
+                    <p>Datum: 25. prosince 2024</p>
+                    <p>Poslední akce v tomto roce, nench si nás ujít!</p>
+                    <div id="countdown">
+                        <div><span id="days">00</span><p>Dní</p></div>
+                        <div><span id="hours">00</span><p>Hodin</p></div>
+                        <div><span id="minutes">00</span><p>Minut</p></div>
+                        <div><span id="seconds">00</span><p>Sekund</p></div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+
+            <!---<div class="recent-events">
+                <h3>Nedcházející akce</h3>
+                <ul>
+                    <li>
+                        <h4>dfadf</h4>
+                        <p>15. prosince 2024</p>
+                    </li>
+                    <li>
+                        <h4>Fadfddf</h4>
+                        <p>30. listopadu 2024</p>
+                    </li>
+                    <li>
+                        <h4>adfdfsd</h4>
+                        <p>10. listopadu 2024</p>
+                    </li>
+                </ul>
+            </div>--->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form-container">
+            <div class="box-1">
+                <div class="section-title">
+                  <span>KONTAKTUJTE NÁS</span>
+                </div>
+            </div>
+            <p>Máte dotaz nebo zájem o naše vystoupení? Napište nám!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="first-name">Jméno</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Vaše jméno" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Příjmení</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Vaše příjmení" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Váš telefon" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">E-mailová adresa</label>
+                    <input type="tel" id="mail" name="phone" placeholder="Vaše e-mailová adresa" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-type">Typ akce</label>
+                    <textarea id="event-type" name="event-type" placeholder="Popište akci, místo nebo jiný detail..." rows="4" required></textarea>
+                </div>
+                <div class="box-1">
+                    <div class="btn btn-one" href="#contact">
+                      <span > ODESLAT </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            
+            
+            <div class="footer-links">
+                <h1>Kontakt</h1>
+                <div class="info">
+                    <p>info@ztracenyklice.cz</p>
+                    <p>+420 123 456 789</p>
+                </div>
+                <ul>
+                    <li><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i>   </li>
+                    <li><i class="fa-brands fa-facebook" style="color: #FFD43B;"></i> </li> 
+                </ul>
+            </div>
+            
+            <div class="footer-info">
+                <p>&copy; 2024 Ztracený klíče. Všechna práva vyhrazena.</p>
+            </div>
+            
+            <div class="footer-logo">
+                <img src="images/logo_zk.png" alt="Logo kapely Ztracený klíče">
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+           // Toggle menu
+           const bambulka = document.getElementById('bambulka');
+           const bambulka2 = document.getElementById('bambulka2');
+
+           function toggleMenu() {
+               const menu = document.getElementById('menu');
+               const mobileMenu = document.querySelector('.mobile-menu');
+               menu.classList.toggle('menu-active');
+               mobileMenu.classList.toggle('open');
+           
+               // Kontrola, zda je menu otevřené
+               if (menu.classList.contains('menu-active')) {
+                   bambulka.style.display = 'block';
+                   bambulka2.style.display = 'block';
+               } else {
+                   bambulka.style.display = 'none';
+                   bambulka2.style.display = 'none';
+               }
+           }
+           
+
+      // Change header style on scroll
+      let lastScrollY = 0;
+      const header = document.querySelector('header');
+  
+      window.addEventListener('scroll', () => {
+          const currentScrollY = window.scrollY;
+  
+          if (currentScrollY > 280) {
+              header.style.position = 'fixed';
+              header.style.backgroundColor = '#121212';
+          } else {
+            header.style.position = 'absolute';
+            header.style.backgroundColor = 'transparent';;
+          }
+  
+         
+          lastScrollY = currentScrollY;
+      });
+
+        const countdownDate = new Date("2024-12-25T00:00:00").getTime();
+    
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+    
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+    
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "Akce probíhá!";
+            }
+        }
+    
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+    
+</body>
+</html>
